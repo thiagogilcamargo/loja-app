@@ -1,9 +1,9 @@
 import Link from "next/link";
 
-export default function Tenis() {
+export default function Camisa() {
   return (
     <div>
-      <h1>TÊNIS</h1>
+      <h1>CAMISA</h1>
       <p>
         <strong>Descrição:</strong>
       </p>
