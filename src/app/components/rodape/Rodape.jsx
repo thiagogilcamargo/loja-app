@@ -1,6 +1,8 @@
+
 export default function Rodape() {
     return (
-        <div>
-        <h1> desemvolvido por: thiagogilcamargo<h1></div>
-    );
-    }
+      <footer>
+          <p>Desenvolvido por: Thiago Gil Camargo</p>
+      </footer>
+    )
+  }
