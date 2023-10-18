@@ -11,7 +11,7 @@ export default function Calca() {
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime dicta
         ipsa neque deserunt pariatur? Impedit porro necessitatibus, quia
         consequatur expedita itaque est facere omnis quod in numquam, ullam illo
-        odit!a
+        odit!
       </p>
       <p>
         <Link href="/">Voltar...</Link>
