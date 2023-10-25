@@ -16,7 +16,7 @@ export default function NotFound() {
           />
         </div>
       </div>
-      <div className="mt-4">
+      <div className="mt-1">
         <Link href="/" className="text-blue-500 hover:underline">
           Voltar para a página inicial
         </Link>
