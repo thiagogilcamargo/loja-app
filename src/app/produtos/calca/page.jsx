@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Calca() {
   return (
     <div>
-      <h1>Calça</h1>
+      <h1>CALÇA</h1>
       <p>
         <strong>Descrição:</strong>
       </p>
