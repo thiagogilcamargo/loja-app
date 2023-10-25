@@ -2,44 +2,46 @@ import Image from "next/image";
 
 export default async function TodosLaticinios() {
 
-        const response = await fetch("http://localhost:3000/api/laticinios");
-        const queijos = await response.json();
+    const response = await fetch("http://localhost:3000/api/laticinios");
+    const queijos = await response.json();
 
-  return (
-    <div>
+    return (
+        <div className="p-4">
 
-        <h1>Laticínios</h1>
+            <h1 className="text-2xl font-bold mb-4">Laticínios</h1>
 
-        <table>
-            <thead>
-                <tr>    
-                    <th>ID</th>
-                    <th>Imagem</th>
-                    <th>Nome</th>
-                    <th>Preço</th>
-                    <th>Categoria</th>
-                    <th>Descrição</th>
-                </tr>
-            </thead>
-            <tbody>
-                {queijos.map((queijo) => (
-                    <tr key={queijo.id}>
-                        <td>{queijo.id}</td>
-                        <td><Image src={queijo.imagem} width={100} height={100} alt={queijo.descricao} /></td>
-                        <td>{queijo.nome}</td>
-                        <td>{queijo.preco}</td>
-                        <td>{queijo.categoria}</td>
-                        <td>{queijo.descricao}</td>
+            <table className="w-full table-auto border-collapse">
+                <thead>
+                    <tr className="bg-gray-200">
+                        <th className="border p-2">ID</th>
+                        <th className="border p-2">Imagem</th>
+                        <th className="border p-2">Nome</th>
+                        <th className="border p-2">Preço</th>
+                        <th className="border p-2">Categoria</th>
+                        <th className="border p-2">Descrição</th>
                     </tr>
-                ))}
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td colSpan="6">Total de Laticínios: {queijos.length}</td>
-                </tr>
-            </tfoot>
-        </table>
+                </thead>
+                <tbody>
+                    {queijos.map((queijo) => (
+                        <tr key={queijo.id}>
+                            <td className="border p-2">{queijo.id}</td>
+                            <td className="border p-2">
+                                <Image src={queijo.imagem} width={100} height={100} alt={queijo.descricao} />
+                            </td>
+                            <td className="border p-2">{queijo.nome}</td>
+                            <td className="border p-2">{queijo.preco}</td>
+                            <td className="border p-2">{queijo.categoria}</td>
+                            <td className="border p-2">{queijo.descricao}</td>
+                        </tr>
+                    ))}
+                </tbody>
+                <tfoot>
+                    <tr className="bg-gray-200">
+                        <td className="border p-2" colSpan="6">Total de Laticínios: {queijos.length}</td>
+                    </tr>
+                </tfoot>
+            </table>
 
-    </div>
-  )
+        </div>
+    )
 }
