@@ -1,10 +1,48 @@
-/* Arquivo: styles.css */
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
 
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  
+
+  
+  
+
 
 @layer components {
+  .card-user {
+    @apply flex flex-wrap justify-center; /* Centralize os cartões na tela */
+  }
+
+  .card-user li {
+    @apply p-5 m-5 bg-white rounded-lg shadow-md w-32 h-40; /* Reduza o tamanho dos cartões */
+  }
+
+  .card-user img {
+    @apply block mx-auto rounded-full w-16 h-16; /* Reduza o tamanho da imagem */
+  }
+
+  .card-user figcaption {
+    @apply text-center font-bold text-sm mt-2; /* Reduza o tamanho do texto e a margem superior */
+  }
+
+/* Estilos para a classe .page-background */
+.page-background {
+  @apply bg-cover bg-no-repeat;
+  height: 150vh;
+  background-image: url('https://miro.medium.com/v2/resize:fit:5000/1*FKJpjQO4ctBGmT1EM4d1mQ.jpeg');
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+
+  
+  /* Estilos para a classe .menu */
   .menu li {
     @apply inline;
   }
@@ -13,7 +51,14 @@
     @apply inline-block md:p-3 lg:p-6 sm:p-1 font-extrabold hover:bg-amber-600 hover:text-black transition-all duration-300 ease-in-out;
   }
 
+  /* Estilos para a classe .rodape */
   .rodape {
     @apply font-extrabold text-2xl text-white bg-slate-800 p-4 text-center fixed bottom-0 w-full;
   }
-}
+
+
+    /* Estilos para a classe .rodape */
+    .rodape {
+      @apply font-extrabold text-2xl text-white bg-slate-800 p-4 text-center fixed bottom-0 w-full;
+    }
+  }
