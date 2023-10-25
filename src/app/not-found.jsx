@@ -11,15 +11,15 @@ export default function NotFound() {
           <Image
             src="https://httpstatusdogs.com/img/404.jpg"
             alt="Cachorro cavando..."
-            width={650}
-            height={500}
+            width={600} // Reduzi o tamanho da imagem para 500
+            height={600} // Reduzi o tamanho da imagem para 400
           />
         </div>
       </div>
-      <div>
-      <Link href="/" className="text-blue-500 hover:underline text-lg">
-        Voltar para a página inicial
-      </Link>
+      <div className="mt-4">
+        <Link href="/" className="text-blue-500 hover:underline">
+          Voltar para a página inicial
+        </Link>
       </div>
     </div>
   );
