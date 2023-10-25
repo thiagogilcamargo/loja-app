@@ -7,12 +7,12 @@ export default function NotFound() {
       <div className="text-center mb-10">
         <h1 className="text-4xl font-extrabold text-red-600 mb-4">Oops! Página não encontrada</h1>
         <p className="text-lg text-gray-600 mb-6">A página que você está procurando não existe.</p>
-        <div className="mb-6">
-          <Image
+        <div className="mb-5 flex flex-col items-center justify-center">
+          <Image 
             src="https://httpstatusdogs.com/img/404.jpg"
             alt="Cachorro cavando..."
-            width={600} // Reduzi o tamanho da imagem para 500
-            height={600} // Reduzi o tamanho da imagem para 400
+            width={400} // Reduzi o tamanho da imagem para 500
+            height={500} // Reduzi o tamanho da imagem para 400
           />
         </div>
       </div>
