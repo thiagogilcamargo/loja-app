@@ -18,7 +18,7 @@
   }
 
   .card-user li {
-    @apply p-5 m-5 bg-white rounded-lg shadow-md w-32 h-40; /* Reduza o tamanho dos cartões */
+    @apply p-5 m-5 bg-slate-800 rounded-lg shadow-md w-32 h-40; /* Reduza o tamanho dos cartões */
   }
 
   .card-user img {
@@ -26,7 +26,7 @@
   }
 
   .card-user figcaption {
-    @apply text-center font-bold text-sm mt-2; /* Reduza o tamanho do texto e a margem superior */
+    @apply text-center  font-bold text-sm mt-2  text-white; /* Reduza o tamanho do texto e a margem superior */
   }
 
 /* Estilos para a classe .page-background */

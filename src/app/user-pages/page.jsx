@@ -14,7 +14,16 @@ export default function UserPages() {
 
   return (
     <div className="page-background">
-      <h1 className="text-4xl font-extrabold text-red-600 mb-4">User Pages</h1>
+<div className="h-24 w-48 mx-auto mt-8 flex items-center justify-center bg-gradient-to-b  bg-slate-800 bg-slate-800 rounded-lg p-4">
+  <h1 className="text-lg font-extrabold text-red-800 border-2 border-red-700 p-3">
+    User Pages
+  </h1>
+</div>
+
+
+
+
+
 
       <div className="card-scroll">
         <ul className="card-user">
