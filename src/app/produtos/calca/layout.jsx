@@ -13,8 +13,9 @@ export default function CalcaLayout({ children }) {
     borderRadius: '8px',
     padding: '24px',
     boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-    maxWidth: '400px',
+    maxWidth: '1000px',
     width: '100%',
+    marginBottom:'4rem',
   };
 
   const headingStyle = {
