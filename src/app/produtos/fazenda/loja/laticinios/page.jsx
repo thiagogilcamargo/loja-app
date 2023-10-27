@@ -1,11 +1,15 @@
 import Image from "next/image";
 
 export default async function TodosLaticinios() {
-
-    const response = await fetch("http://localhost:3000/api/laticinios");
-    const queijos = await response.json();
-
-    return (
+    let queijos;
+    try{
+        const response = await fetch("http://localhost:3000/api/laticinios/0");
+        queijos = await response.json();
+    }catch(error){
+        console.log(error);
+        redirect("/error");
+    }
+return (
         <div className="p-4">
 
             <h1 className="text-2xl font-bold mb-4">Laticínios</h1>
